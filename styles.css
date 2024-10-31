@@ -1,0 +1,58 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Full-screen body setup */
+html, body {
+    height: 100%;
+
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid red;
+}
+
+.container {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    height: 100%;
+    width: 1000px;
+    border: solid green;
+}
+
+.image-container {
+    height: 100%;
+    width: 400px;
+    position: relative;
+    
+    
+}
+
+
+
+.background {
+   width: 400px;
+   height: 100%;
+   object-fit: cover;
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: 1;
+}
+
+.overlay-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;      /* Adjust width to control overlay image size */
+    height: 100%;     /* Adjust height to control overlay image size */
+    object-fit: contain; /* Maintains aspect ratio */
+    z-index: 2;       /* Ensures it appears above the background image */
+}
