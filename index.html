@@ -11,11 +11,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caesar+Dressing&display=swap" rel="stylesheet">
+
+    <!-- Font for form -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Container for all content -->
     <div class="container">
-
+        <!-- This container contains the images on the left side -->
         <div class="image-container">
             <img src="images/background.jpg" class="background-image">
             
@@ -24,11 +29,53 @@
                 <p class="odin-text">ODIN</p>
             </div>
 
-            <p class="bottom-text">Photo by Halie West on Unplash</p>
-        
+            <p class="bottom-text">Photo by Halie West on Unsplash</p>
         </div>
-       
-       
+
+        <!-- Container that includes the right side of the container -->
+        <div class="right-container">
+            <div class="top-container">
+                <h2>This is not a real online service! You know you need something 
+                    like this in your life to help you realize your deepest dreams.
+                    Sign up now to get started.<br>
+
+                    You know you want to.
+                </h2>
+            </div>
+
+            <!-- Single form tag wrapping both left-middle and right-middle containers -->
+            <form action="https://httpbin.org/post" method="post">
+                <div class="middle-container">
+                    <div class="left-middle-container">
+                        <h1>Let's do this!</h1>
+                        <label for="first_name">FIRST NAME</label> <br>
+                        <input type="text" name="first_name" id="first_name" required placeholder="Enter your first name"> <br>
+
+                        <label for="email">EMAIL</label> <br>
+                        <input type="email" id="email" name="email" required placeholder="Enter your email"> <br>
+
+                        <label for="password">PASSWORD</label> <br>
+                        <input type="text" name="password" id="password" required placeholder="Enter your password">
+                    </div>
+
+                    <div class="right-middle-container">
+                        <label for="last_name">LAST NAME</label> <br>
+                        <input type="text" name="last_name" id="last_name" required placeholder="Enter your last name"> <br>
+
+                        <label for="phone_no">PHONE NUMBER</label> <br>
+                        <input type="tel" id="phone_no" name="phone_no" required placeholder="0612345678" maxlength="10"> <br>
+
+                        <label for="confirm_password">CONFIRM PASSWORD</label> <br>
+                        <input type="text" name="confirm_password" id="confirm_password" required placeholder="Enter your password again">
+                    </div>
+                </div>
+
+                <div class="bottom-container">
+                    <button type="submit">Create Account</button>
+                    <p>Already have an account? <a href="http://127.0.0.1:5500/index.html" class="login-link">Log in</a></p>
+                </div>
+            </form>
+        </div>
     </div>
 </body>
 </html>

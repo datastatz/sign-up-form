@@ -8,14 +8,13 @@
 /* Full-screen body setup */
 html, body {
     height: 100%;
-
 }
 
 body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: solid red;
+
 }
 
 .container {
@@ -24,18 +23,13 @@ body {
     align-items: left;
     height: 100%;
     width: 1000px;
-    border: solid green;
 }
 
 .image-container {
     height: 100%; /* Set container height (relative to parent) */
     width: 400px; /* Set container width */
     position: relative; /* This establishes a reference point for absolute positioning of child elements */
-    
-    
 }
-
-
 
 .background-image {
    width: 400px;
@@ -48,7 +42,7 @@ body {
 }
 
 .odin-background {
-    position:absolute;
+    position: absolute;
     top: 25%;
     width: 100%;
     height: 200px;
@@ -60,15 +54,15 @@ body {
 }
 
 .overlay-image {
-    width:90px;      /* Adjust width to control overlay image size */
+    width: 90px;      /* Adjust width to control overlay image size */
     object-fit: contain;  
     z-index: 4;       /* Ensures it appears above the background image */
 }
 
 .odin-text {
-    color:white;
+    color: white;
     z-index: 4;
-    font-family: "Caesar Dressing", system-ui;
+    font-family: "Norse", 'system-ui', 'Times New Roman', 'Times, serif';
     font-weight: 400;
     font-style: normal;
     font-size: 80px;
@@ -83,4 +77,115 @@ body {
     z-index: 4;
     bottom: 0;
     left: 90px;
+}
+
+.right-container {
+    width: 600px;
+    padding: 20px;
+}
+
+@font-face {
+    font-family: Norse;
+    src: url(font/Norse-Bold.otf);
+}
+
+h2 {
+    font-family: "Outfit", sans-serif;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: left;
+    padding-top: 150px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.top-container {
+    height: 33%;
+    background-color: rgba(0, 0, 0, 0.075); /* Semi-transparent black */;
+}
+
+.middle-container {
+    display: flex;
+    height: auto; /* Adjust based on content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.left-middle-container,
+.right-middle-container {
+    width: 50%;
+    padding: 20px; /* Space around the form elements */
+    box-sizing: border-box; /* Ensures padding does not affect width */
+}
+
+.right-middle-container {
+    padding-top: 50px;
+}
+
+h1 {
+    font-family: "Outfit", "sans-serif";
+    font-size: 20px;
+    line-height: 25px;
+    text-align: left;
+    padding-top: 5px;
+    padding-left: 0px;
+    
+}
+
+form {
+    font-family: "Outfit", "sans-serif";
+}
+
+form label {
+    display: block; /* Forces the label to take up the full width, aligning it with the input below */
+    font-family: "Outfit", sans-serif;
+    font-size: 16px;
+    color: #333; /* Update this color to match the style you want */
+    font-weight: bold;
+    margin-bottom: 5px; /* Space between label and input */
+}
+
+form input {
+    width: 100%; /* Makes the input box full-width within the form */
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px; /* Adds a rounded border */
+    margin-bottom: 10px; /* Space between input fields */
+    box-sizing: border-box;
+}
+
+.bottom-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    text-align: center;
+}
+
+button {
+    color: white;
+    width: 150px;
+    height: 40px;
+    font-family: "Outfit", "sans-serif";
+    background-color: #596D48;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3c4e31; /* Darkens color slightly on hover */
+}
+
+p {
+    font-family: "Outfit", "sans-serif";
+}
+
+.login-link {
+    color: #4e5840;
+    text-decoration: none;
+}
+
+.login-link:hover {
+    text-decoration: underline;
 }
